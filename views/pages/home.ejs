@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    
+    <%- include('../partials/header'); %>
+
+    <div class="container p-4 pt-5">
+        <div class="row " >
+            <!-- Main large Screen -->
+            <div class="col-lg-6 ">
+                <h1 class="display-4 pb-3"><b>Hi,</b></h1>
+                <h1 class="display-4"><b>I am a <span class="text-primary">Web Developer.</span></b></h1>
+                <div class="row pt-5">
+                    <div class="col-lg-8 d-flex justify-content-center">
+                        <a class="btn btn-primary btn-lg" href="/contact" role="button">Contact Me</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-6  d-flex justify-content-center blob-Style">
+                <!-- <div id="svgAnimation"> -->
+                    <svg id="sw-js-blob-svg" viewBox="0 13 100 75" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+                    </svg>
+                <!-- </div> -->
+
+            </div>
+           
+            <!-- Small screen -->
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="javascripts/scripts.js"></script>
+
+</html>

@@ -1,0 +1,115 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+} */
+body{
+  font-family: 'Roboto', sans-serif; 
+}
+.customActive {
+  background: #83D0FC !important;
+  color: black !important;
+  border-bottom: 2px solid #4071F4 !important;
+  border-radius: 5px !important;
+  padding-left: 10px;
+}
+
+.textActive{
+  color: black;
+}
+
+.border-bottom {
+  border-bottom-width: 2px !important;
+}
+
+.textColor{
+  color: #4071F4;
+}
+
+h4.h4-custom {
+  margin-bottom: 0px;
+}
+.circle {
+  background: #4071F4;
+  border-radius: 20%;
+  width: 300px;
+  height: 300px;
+}
+
+.square {
+  width: 200px;
+  height: 250px;
+  background: white;
+  border: 5px solid #4071F4 ;
+  border-radius: 15%;
+}
+
+.svgImage {
+  width: 95%;
+  height: 95%;
+}
+
+
+/* @media (min-width: 480px) { 
+  .square {
+    padding-top: 10px;
+    width: 150px;
+    height: 150px;
+    background: #4071F4;
+  }
+ } */
+
+p {
+  font-size: 1.2rem;
+}
+
+.projectimg {
+  width: 175px;
+  height: 175px;
+}
+
+.blob-Style{
+  padding-top:20px;
+}
+
+@media (min-width:990px) {
+  .customActive {
+    padding-left: 0px;
+  }
+  .blob-Style{
+    padding-top:0px;
+  }
+
+  /* .circle {
+    width: 400px;
+    height: 400px;
+  } */
+
+  .svgImage {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* @media (min-width:350x) {
+  .customActive {
+    padding-left: 0px;
+  }
+
+  .blob-Style{
+    padding-top:20px;
+  }
+
+  .circle {
+    width: 350px;
+    height: 350px;
+  }
+
+  .svgImage {
+    width: 350px;
+    height: 350px;
+  }
+} */
