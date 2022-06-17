@@ -25,7 +25,7 @@ function addProjects(imgUrl, title,projectUrl, stack){
                         <h5>${title}</h5>
                         
                     </div>
-                    <div class="col-12 ps-0 pt-0 d-flex justify-content-center">
+                    <div class="col-12 ps-0 pt-0 d-flex justify-content-center" style="text-align:center;">
                     <h6>${stack}</h6>
                     </div>
                 </div>
@@ -79,9 +79,11 @@ function blobAnimiation(stroke_width = 0,direction = false, imageurl='images/Rag
 }
 
 addProjects('images/123cvLogo.svg','A CV Creating Telegram Bot', "https://123cv.co.za", "NodeJS/Postgres/AWS")
-addProjects('images/stock-unplash-300-200.jpeg','JSE Share Alert App', "https://www.jsealerts.co.za/", "Django/Postgres/Heroku")
+addProjects('images/stock-earnings.svg','JSE Share Alert App', "https://www.jsealerts.co.za/", "Django/Postgres/Heroku")
 addProjects('images/alex-no-background.png','Personal Website', "/", "NodeJS/EJS/Boostrap/AWS")
-addProjects('images/Chair-Contact-pic-134-200.jpeg','Boutique Ecommerce Site with Wix', "https://www.thesilkpurse.co.za/","Ecommerce/Business Analysis")
+addProjects('images/API_image.svg','Web App API', "https://github.com/AlexCawood/rhea_api", "NodeJS/ExpressJS - User Authentication & Media Uploads")
+addProjects('images/shopCart.svg','Ecommerce Sites with Wix', "https://www.thesilkpurse.co.za/","Ecommerce/Business Analysis")
+
 
 // for (let i = 1; i <= 3; i++) {
 //     addProjects('images/123cvLogo.svg','Test title '+i, "https://123cv.co.za")
