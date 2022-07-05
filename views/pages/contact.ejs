@@ -22,7 +22,9 @@
             <!-- Main large Screen -->
             <div class="col-lg-6 ">
                 <h1 class="display-4 pb-3"><b>Reach out!</b></h1>
-
+                
+                <% if(data.length === 0) { %>
+                
                 <form action="contact" method="post" >
                     <div class="form-group pt-1">
                         <label for="fullname">Your Name:</label>
@@ -33,13 +35,54 @@
                         <input type="email" class="form-control" id="email" placeholder="Email@exmail.com" name="email">
                     </div>
                     <div class="form-group pt-1">
-                        <label for="message">How can I help? </label>
+                        <label for="message">How can I help?</label>
                         <textarea class="form-control" id="message" rows="5" name="message"></textarea>
+                    </div>
+                    
+                    <div class="form-group pt-1">
+
+                        <label for="answer" id="question"></label>
+
+                        <input class="form-control" id="answer" rows="5" name="answer"></input>
+                    </div>
+                    <div class="form-group pt-1">
+
+                        <input class="form-control" id="questionId" rows="5" name="questionId" hidden></input>
                     </div>
                     <div class="form-group pt-4 d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary ">Send Message</button>
                     </div>
                   </form>
+                  <% } else { %>
+                    <form action="contact" method="post" >
+                        <div class="form-group pt-1">
+                            <label for="fullname">Your Name:</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Full Name" name="name" value="<%= data[0]%>">
+                        </div>
+                        <div class="form-group pt-1">
+                            <label for="email">Your Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email@exmail.com" name="email" value="<%= data[1]%>">
+                        </div>
+                        <div class="form-group pt-1">
+                            <label for="message">How can I help?</label>
+                            <textarea class="form-control" id="message" rows="5" name="message" ></textarea>
+                        </div>
+                        
+                        <div class="form-group pt-1">
+    
+                            <label for="answer" id="question"></label>
+                            <input class="form-control" id="answer" rows="5" name="answer"></input>
+                            <p id="error"> </p>
+                        </div>
+                        <div class="form-group pt-1">
+    
+                            <input class="form-control" id="questionId" rows="5" name="questionId" hidden></input>
+                        </div>
+                        <div class="form-group pt-4 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary ">Send Message</button>
+                        </div>
+                      </form>
+                  <% } %>
 
             </div>
             <div class="col-lg-6 d-flex justify-content-center">
@@ -49,10 +92,6 @@
 
             </div>
            
-            <!-- Small screen -->
-            <div class="col-sm-12">
-
-            </div>
         </div>
     </div>
 
@@ -62,6 +101,11 @@
 <script src="javascripts/scripts.js"></script>
 <script>
     blobAnimiation(0,false,'images/Ragga_remove_background.png', x='-5',y='10')
+
+    document.getElementById('questionId').value =  "<%= question[0] %>"
+    document.getElementById('question').innerHTML =  "<%= question[1] %>"
+    document.getElementById('message').value = "<%= data[2] %>"
+    document.getElementById('error').innerHTML = "<%= data[3] %>"
 </script>
 
 </html>
