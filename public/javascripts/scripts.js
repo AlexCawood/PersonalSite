@@ -78,9 +78,11 @@ function blobAnimiation(stroke_width = 0,direction = false, imageurl='images/Rag
 
 }
 
-addProjects('images/123cvLogo.svg','A CV Creating Telegram Bot', "https://123cv.co.za", "NodeJS/Postgres/AWS")
+addProjects('images/123cvLogo.svg','A CV Creating Telegram Bot', "https://t.me/create_123cv_bot?start=new", "NodeJS/Postgres/AWS")
+addProjects('images/messenger-logo.svg', 'A Resume/ CV Creating Messenger Bot', 'http://m.me/123cvapp',"NodeJS/Lambda/Redis/C#/Postgress/AWS")
+addProjects('images/scraper-svg.svg', 'Job Scraper', 'https://twitter.com/123cvDev',"Python/SQLite")
 addProjects('images/stock-earnings.svg','JSE Share Alert App', "https://www.jsealerts.co.za/", "Django/Postgres/Heroku")
-addProjects('images/alex-no-background.png','Personal Website', "/", "NodeJS/EJS/Boostrap/AWS")
+// addProjects('images/alex-no-background.png','Personal Website', "/", "NodeJS/EJS/Boostrap/AWS")
 addProjects('images/API_image.svg','Web App API', "https://github.com/AlexCawood/rhea_api", "NodeJS/ExpressJS - User Authentication & Media Uploads")
 addProjects('images/shopCart.svg','Ecommerce Sites with Wix', "https://www.thesilkpurse.co.za/","Ecommerce/Business Analysis")
 
